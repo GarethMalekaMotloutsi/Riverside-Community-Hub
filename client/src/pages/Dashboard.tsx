@@ -36,7 +36,7 @@ function Dashboard() {
         </p>
       </section>
 
-      <section className="mt-8 grid gap-6 md:grid-cols-2">
+      <section className="mt-8 grid gap-6 md:grid-cols-3">
         <Link
           to="/bookings"
           className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
@@ -69,6 +69,23 @@ function Dashboard() {
 
           <span className="mt-5 inline-block text-sm font-semibold text-blue-600">
             Make a donation →
+          </span>
+        </Link>
+
+        <Link
+          to="/profile"
+          className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+        >
+          <h2 className="text-xl font-semibold text-gray-900">
+            My Profile
+          </h2>
+
+          <p className="mt-2 text-sm text-gray-600">
+            View your membership details and account information.
+          </p>
+
+          <span className="mt-5 inline-block text-sm font-semibold text-blue-600">
+            View profile →
           </span>
         </Link>
       </section>
