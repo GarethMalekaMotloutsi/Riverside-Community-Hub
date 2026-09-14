@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import Bookings from './Bookings'
 
 function Dashboard() {
   const [name, setName] = useState('')
@@ -24,6 +25,7 @@ function Dashboard() {
     <main>
       <section>
         <h1>Riverside Community Hub</h1>
+
         <h2>Welcome, {name}</h2>
 
         <p>
@@ -33,6 +35,10 @@ function Dashboard() {
         <button onClick={handleSignOut}>
           Sign out
         </button>
+      </section>
+
+      <section>
+        <Bookings />
       </section>
     </main>
   )
