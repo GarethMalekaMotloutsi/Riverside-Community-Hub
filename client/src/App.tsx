@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'
 import Bookings from './pages/Bookings'
 import AdminDashboard from './pages/AdminDashboard'
 import Donations from './pages/Donations'
+import Profile from './pages/Profile'
 
 function App() {
   const [session, setSession] = useState<any>(null)
@@ -84,8 +85,16 @@ function App() {
               </Link>
 
               <Link to="/donations" className="text-sm font-medium text-gray-600 hover:text-gray-900">
-  Donations
-</Link>
+                Donations
+              </Link>
+
+             <Link to="/profile" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+                Profile
+             </Link>
+
+              <Link to="/profile" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+                Profile
+              </Link>
 
               {(role === 'staff' || role === 'admin') && (
                 <Link
@@ -113,6 +122,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/donations" element={<Donations />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
 
