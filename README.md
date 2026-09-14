@@ -177,40 +177,6 @@ It returns a simple response confirming that the Riverside Community Hub API is 
 
 The backend is deployed separately from the React frontend using Render.
 
-## Project Structure
-
-Riverside-Community-Hub/
-|
-|-- client/
-|   |-- src/
-|   |   |-- lib/
-|   |   |   |-- supabase.ts
-|   |   |
-|   |   |-- pages/
-|   |   |   |-- AdminDashboard.tsx
-|   |   |   |-- Auth.tsx
-|   |   |   |-- Bookings.tsx
-|   |   |   |-- Dashboard.tsx
-|   |   |   |-- Donations.tsx
-|   |   |   |-- Profile.tsx
-|   |   |
-|   |   |-- App.tsx
-|   |   |-- App.css
-|   |   |-- index.css
-|   |   |-- main.tsx
-|   |
-|   |-- package.json
-|   |-- vite.config.ts
-|
-|-- server/
-|   |-- src/
-|   |   |-- server.ts
-|   |
-|   |-- package.json
-|   |-- tsconfig.json
-|
-|-- README.md
-
 ## Running the Project Locally
 
 ### Frontend
